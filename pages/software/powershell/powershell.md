@@ -29,3 +29,23 @@ netstat -ano | findstr {port}
 ```powershell
 taskkill /F /PID {ID}
 ```
+
+#### Kill process on specific port
+
+```powershell
+Get-NetTCPConnection -LocalPort {port} | Stop-Process -Force
+```
+
+Or find and kill in two steps:
+
+```powershell
+$pid = (Get-NetTCPConnection -LocalPort {port}).OwningProcess
+Stop-Process -Id $pid -Force
+```
+
+Using CMD with netstat:
+
+```cmd
+netstat -ano | findstr :{port}
+taskkill /PID {PID} /F
+```
