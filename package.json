@@ -1,5 +1,5 @@
 {
-  "name": "cheatsheets",
+  "name": "@tertium/cheatsheets",
   "version": "2.2.3",
   "description": "Cheatsheets for programmers.",
   "scripts": {
@@ -7,19 +7,19 @@
     "release:minor": "node ./node_modules/@tertium/js/scripts/release.js minor",
     "release:major": "node ./node_modules/@tertium/js/scripts/release.js major"
   },
-  "homepage": "https://github.com/Tertiumnon/cheatsheets#readme",
+  "homepage": "https://github.com/Tertiumnon/tertium-cheatsheets#readme",
   "bugs": {
-    "url": "https://github.com/Tertiumnon/cheatsheets/issues"
+    "url": "https://github.com/Tertiumnon/tertium-cheatsheets/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tertiumnon/cheatsheets.git"
+    "url": "git+https://github.com/Tertiumnon/tertium-cheatsheets.git"
   },
   "license": "ISC",
   "author": "Vitalii Balabanov",
   "type": "commonjs",
   "main": "index.js",
   "devDependencies": {
-    "@tertium/js": "^0.15.0"
+    "@tertium/js": "^1.4.8"
   }
 }

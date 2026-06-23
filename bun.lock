@@ -1,14 +1,15 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "cheatsheets",
       "devDependencies": {
-        "@tertium/js": "^0.15.0",
+        "@tertium/js": "^1.4.8",
       },
     },
   },
   "packages": {
-    "@tertium/js": ["@tertium/js@0.15.0", "", {}, "sha512-p+1k1vAuoyVjFCVUvf5bEYkj/uB9G9Lo+WeyAbDMVTpp9sTY2+HBFerekAbuvOA3BaA/Nz1C8aIibargpg7M8A=="],
+    "@tertium/js": ["@tertium/js@1.4.8", "", {}, "sha512-YZTVNDiH8h7TJEr+Z1PLlvXAawxFtTNhqlKv7ertX9Bl1PE5/rVOaXN7K+PncFS7KfgdW/bSKiQJ0aWE02fjWg=="],
   }
 }
