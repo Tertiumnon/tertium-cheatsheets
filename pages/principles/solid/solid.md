@@ -1,27 +1,178 @@
 # SOLID
 
-- Single responsibility
-- Open-closed
-- Liskov substitution
-- Interface segregation
-- Dependency inversion
+Five principles for writing maintainable, scalable code.
 
-## Single responsibility
+- Single Responsibility (SRP)
+- Open-Closed (OCP)
+- Liskov Substitution (LSP)
+- Interface Segregation (ISP)
+- Dependency Inversion (DIP)
 
-A module should be responsible to one, and only one, actor.
+## Single Responsibility (SRP)
 
-## Open-closed
+A module should be responsible to one, and only one, actor (reason to change).
 
-Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+**Bad:**
+```typescript
+class User {
+  create() { }
+  save() { }
+  sendEmail() { }        // Email responsibility
+  generateReport() { }   // Report responsibility
+}
+```
 
-## Liskov substitution
+**Good:**
+```typescript
+class User {
+  create() { }
+  save() { }
+}
 
-An object (such as a class) may be replaced by a sub-object (such as a class that extends the first class) without breaking the program.
+class EmailService {
+  sendEmail(user) { }
+}
 
-## Interface segregation
+class ReportGenerator {
+  generateReport(user) { }
+}
+```
 
-No code should be forced to depend on methods it does not use.
+## Open-Closed (OCP)
 
-## Dependency inversion
+Software entities should be **open for extension** but **closed for modification**.
 
-The conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are reversed, thus rendering high-level modules independent of the low-level module implementation details.
+**Bad:**
+```typescript
+class PaymentProcessor {
+  process(payment) {
+    if (payment.type === 'credit') { /* process */ }
+    if (payment.type === 'paypal') { /* process */ }
+    if (payment.type === 'bitcoin') { /* process */ }  // Modify for new type
+  }
+}
+```
+
+**Good:**
+```typescript
+interface PaymentProcessor {
+  process(amount: number): void;
+}
+
+class CreditCardProcessor implements PaymentProcessor {
+  process(amount) { /* credit logic */ }
+}
+
+class PayPalProcessor implements PaymentProcessor {
+  process(amount) { /* paypal logic */ }
+}
+
+// New payment type? Just add new class, don't modify existing
+```
+
+## Liskov Substitution (LSP)
+
+Subtypes must be substitutable for their base types without breaking functionality.
+
+**Bad:**
+```typescript
+class Bird {
+  fly() { console.log('Flying'); }
+}
+
+class Penguin extends Bird {
+  fly() { throw new Error('Penguins cannot fly'); }  // Violates LSP
+}
+```
+
+**Good:**
+```typescript
+class Bird { }
+
+class FlyingBird extends Bird {
+  fly() { console.log('Flying'); }
+}
+
+class Penguin extends Bird {
+  swim() { console.log('Swimming'); }
+}
+```
+
+## Interface Segregation (ISP)
+
+No client should be forced to depend on methods it does not use.
+
+**Bad:**
+```typescript
+interface Worker {
+  work(): void;
+  eat(): void;      // Not all workers need to eat
+  manage(): void;   // Robots don't need to manage
+}
+
+class Robot implements Worker {
+  work() { }
+  eat() { throw new Error('Robots don\'t eat'); }
+  manage() { throw new Error('Robots don\'t manage'); }
+}
+```
+
+**Good:**
+```typescript
+interface Workable {
+  work(): void;
+}
+
+interface Eatable {
+  eat(): void;
+}
+
+interface Manageable {
+  manage(): void;
+}
+
+class Robot implements Workable {
+  work() { }
+}
+
+class Human implements Workable, Eatable, Manageable {
+  work() { }
+  eat() { }
+  manage() { }
+}
+```
+
+## Dependency Inversion (DIP)
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+**Bad:**
+```typescript
+class UserService {
+  private database = new MySQLDatabase();  // Direct dependency on MySQL
+
+  getUser(id) {
+    return this.database.query(`SELECT * FROM users WHERE id = ${id}`);
+  }
+}
+```
+
+**Good:**
+```typescript
+interface Database {
+  query(sql: string): any;
+}
+
+class UserService {
+  constructor(private database: Database) { }
+
+  getUser(id) {
+    return this.database.query(`SELECT * FROM users WHERE id = ${id}`);
+  }
+}
+
+// Can inject any database implementation
+const service = new UserService(new MySQLDatabase());
+// OR
+const service = new UserService(new PostgresDatabase());
+```
