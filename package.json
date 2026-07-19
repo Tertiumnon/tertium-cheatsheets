@@ -1,6 +1,6 @@
 {
   "name": "@tertium/cheatsheets",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Cheatsheets for programmers.",
   "scripts": {
     "release:patch": "node ./node_modules/@tertium/js/scripts/release.js patch",
