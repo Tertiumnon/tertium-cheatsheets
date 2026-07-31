@@ -239,9 +239,10 @@ Each service follows this pattern:
 - Microsoft - Event-Driven Architecture: https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven
 
 ### Related Patterns
-- Event Sourcing
-- CQRS (Command Query Responsibility Segregation)
-- Saga Pattern (Distributed Transactions)
-- Choreography vs. Orchestration
+- [Event Sourcing Pattern](../../patterns/event-sourcing-pattern/event-sourcing-pattern.md)
+- [CQRS Pattern](../../patterns/cqrs-pattern/cqrs-pattern.md) (Command Query Responsibility Segregation)
+- [Publish-Subscribe Pattern](../../patterns/pub-sub-pattern/pub-sub-pattern.md) — the broker-mediated messaging behind most event-driven systems
+- [Orchestration vs. Choreography Pattern](../../patterns/orchestration-choreography-pattern/orchestration-choreography-pattern.md) — Saga coordination strategies for distributed transactions
+- [Concurrency Architecture](../concurrency-architecture/concurrency-architecture.md) — how individual consumers process events in parallel
 - Message Broker Patterns
 - Domain Events

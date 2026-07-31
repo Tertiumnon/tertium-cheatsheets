@@ -395,11 +395,12 @@ class PlaceOrderUseCase {
 ## Related Patterns
 
 - **Domain Events:** Capture and communicate domain state changes
-- **Event Sourcing:** Store domain events as source of truth
-- **CQRS:** Separate read and write models
-- **Microservices:** Each bounded context as separate service
-- **Repository Pattern:** Abstract data persistence
+- **[Event Sourcing Pattern](../../patterns/event-sourcing-pattern/event-sourcing-pattern.md):** Store domain events as source of truth
+- **[CQRS Pattern](../../patterns/cqrs-pattern/cqrs-pattern.md):** Separate read and write models
+- **[Microservices Architecture](../microservices-architecture/microservices-architecture.md):** Each bounded context as separate service
+- **[Repository Pattern](../../patterns/repository-pattern/repository-pattern.md):** Abstract data persistence
 - **Service Locator:** Dependency injection for services
+- **[Interpreter Architecture](../interpreter-architecture/interpreter-architecture.md):** A DSL is one way to make the ubiquitous language directly executable
 
 ## Implementation Tools & Frameworks
 

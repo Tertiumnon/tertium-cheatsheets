@@ -366,7 +366,7 @@ order.deliver();  // Triggers all observers
 
 ## Related Patterns
 
-- **Pub/Sub Pattern:** Similar but usually decoupled via a message broker
+- **[Pub/Sub Pattern](../pub-sub-pattern/pub-sub-pattern.md):** Similar but usually decoupled via a message broker instead of direct references
 - **Event Emitter:** Implementation pattern for observers
 - **Reactive Extensions (RxJS):** Modern implementation with additional operators
 

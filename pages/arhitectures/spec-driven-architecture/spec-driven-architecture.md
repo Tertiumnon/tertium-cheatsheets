@@ -217,9 +217,10 @@ A vague prompt ("add checkout") leaves the agent to infer requirements, and infe
 
 ## Related Patterns
 
-- [Domain-Driven Architecture](../arhitectures/domain-driven-architecture/domain-driven-architecture.md) — shared vocabulary (ubiquitous language) plays the same role as a spec's shared requirements
-- [Testing Strategy](../testing/testing-strategy.md) — acceptance criteria in a spec become the test suite's backbone
-- [Code Review Guidelines](../best-practices/code-review/code-review.md) — the spec is the checklist a reviewer verifies generated code against
+- [Domain-Driven Architecture](../domain-driven-architecture/domain-driven-architecture.md) — shared vocabulary (ubiquitous language) plays the same role as a spec's shared requirements
+- [Testing Strategy](../../testing/testing-strategy.md) — acceptance criteria in a spec become the test suite's backbone
+- [Code Review Guidelines](../../best-practices/code-review/code-review.md) — the spec is the checklist a reviewer verifies generated code against
+- [Architectural Styles vs. Architectural Patterns](../architecture-styles-and-patterns/architecture-styles-and-patterns.md) — where Spec-Driven Architecture fits relative to the ten major styles
 
 ## References & Sources
 

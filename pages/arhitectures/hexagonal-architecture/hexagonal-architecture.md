@@ -674,11 +674,12 @@ Controllers:        *Controller.ts      (OrderController.ts)
 - Uncle Bob - Clean Architecture: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
 ### Related Patterns
-- Clean Architecture
-- Domain-Driven Design
-- Dependency Injection
-- Repository Pattern
-- Adapter Pattern
+- [Clean Architecture](../clean-architecture/clean-architecture.md) and [Onion Architecture](../clean-architecture/clean-architecture--onion.md) — same dependency-inversion rule, different vocabulary
+- [Layered Architecture](../layered-architecture/layered-architecture.md) — the un-inverted style this pattern replaces layer-to-layer calls in
+- [Domain-Driven Architecture](../domain-driven-architecture/domain-driven-architecture.md)
+- [Dependency Injection Pattern](../../patterns/dependency-injection-pattern/dependency-injection.md)
+- [Repository Pattern](../../patterns/repository-pattern/repository-pattern.md)
+- [Adapter Pattern](../../patterns/adapter-pattern/adapter-pattern.md)
 
 ### Technologies
 - **Inversion of Control (IoC) Containers:** Spring, NestJS, Inversify

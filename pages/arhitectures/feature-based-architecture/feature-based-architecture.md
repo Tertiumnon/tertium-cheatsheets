@@ -439,9 +439,10 @@ features/auth/
 ## Related Patterns
 
 - **Monorepo:** Organize multiple features as packages
-- **Facade Pattern:** Public API for each feature
+- **[Facade Pattern](../../patterns/facade-pattern/facade.md):** Public API for each feature
 - **Event Bus:** Loose coupling between features
 - **Module Pattern:** Encapsulation within features
+- **[Separation of Concerns](../separation-of-concerns/separation-of-concerns.md):** Feature-based is a vertical application of this same underlying principle
 
 ## References & Sources
 

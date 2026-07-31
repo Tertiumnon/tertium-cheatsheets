@@ -387,10 +387,11 @@ consumer2.start();
 
 ## Related Patterns
 
-- **Observer Pattern:** Similar event-driven approach
+- **[Observer Pattern](../observer-pattern/observer-pattern.md):** Similar event-driven approach
 - **Mediator Pattern:** Queue acts as mediator
 - **Thread Pool Pattern:** Consumers can be thread pools
-- **Pub/Sub Pattern:** Similar with multiple topics
+- **[Pub/Sub Pattern](../pub-sub-pattern/pub-sub-pattern.md):** Similar with multiple topics
+- **[Concurrency Architecture](../../arhitectures/concurrency-architecture/concurrency-architecture.md):** The broader architectural style this pattern implements
 
 ## References & Sources
 

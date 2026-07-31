@@ -672,7 +672,9 @@ export function logRequest(req: Request, res: Response): void {
 - Service Discovery
 - API Gateway
 - Circuit Breaker
-- Saga Pattern
-- Event Sourcing
-- CQRS
+- [Orchestration vs. Choreography Pattern](../../patterns/orchestration-choreography-pattern/orchestration-choreography-pattern.md) — the two strategies behind the Saga Pattern shown above
+- [Event Sourcing Pattern](../../patterns/event-sourcing-pattern/event-sourcing-pattern.md)
+- [CQRS Pattern](../../patterns/cqrs-pattern/cqrs-pattern.md)
+- [Service-Oriented Architecture](../service-oriented-architecture/service-oriented-architecture.md) — the coarser-grained, centrally-integrated predecessor of this style
+- [Distributed Systems Architecture](../distributed-architecture/distributed-architecture.md) — the broader style microservices is a concrete strategy within
 - Database per Service

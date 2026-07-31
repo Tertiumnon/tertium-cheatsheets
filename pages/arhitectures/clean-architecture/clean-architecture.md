@@ -330,10 +330,12 @@ describe('OrderApplicationService', () => {
 
 ## Related Patterns
 
-- **Hexagonal Architecture:** Similar but focuses on ports/adapters
-- **Domain-Driven Design:** Similar focus on domain isolation
-- **Repository Pattern:** Used in infrastructure layer
-- **Dependency Injection:** Essential for clean architecture
+- **[Onion Architecture](./clean-architecture--onion.md):** The original 2008 formulation of this same concentric, dependency-inverted structure
+- **[Hexagonal Architecture](../hexagonal-architecture/hexagonal-architecture.md):** Similar but focuses on ports/adapters
+- **[Domain-Driven Architecture](../domain-driven-architecture/domain-driven-architecture.md):** Similar focus on domain isolation
+- **[Layered Architecture](../layered-architecture/layered-architecture.md):** The un-inverted ancestor this style refines by pointing dependencies inward
+- **[Repository Pattern](../../patterns/repository-pattern/repository-pattern.md):** Used in infrastructure layer
+- **[Dependency Injection Pattern](../../patterns/dependency-injection-pattern/dependency-injection.md):** Essential for clean architecture
 
 ## References & Sources
 
