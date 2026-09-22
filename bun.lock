@@ -5,11 +5,11 @@
     "": {
       "name": "cheatsheets",
       "devDependencies": {
-        "@tertium/js": "^1.4.8",
+        "@tertium/js": "^3.0.0",
       },
     },
   },
   "packages": {
-    "@tertium/js": ["@tertium/js@1.4.8", "", {}, "sha512-YZTVNDiH8h7TJEr+Z1PLlvXAawxFtTNhqlKv7ertX9Bl1PE5/rVOaXN7K+PncFS7KfgdW/bSKiQJ0aWE02fjWg=="],
+    "@tertium/js": ["@tertium/js@3.0.0", "", { "peerDependencies": { "jose": "^6.0.0" }, "optionalPeers": ["jose"] }, "sha512-SY6pwaAkVPgQjCIpyKvSECAaZ8TL1K+cqXxnM1HUg2M2Lz5Njnika8AkYH99JNZZnb8KDmT/4cawGDpxEK6lfA=="],
   }
 }

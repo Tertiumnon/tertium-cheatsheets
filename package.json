@@ -20,6 +20,6 @@
   "type": "commonjs",
   "main": "index.js",
   "devDependencies": {
-    "@tertium/js": "^1.4.8"
+    "@tertium/js": "^3.0.0"
   }
 }
