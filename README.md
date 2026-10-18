@@ -7,7 +7,7 @@ Cheatsheets for programmers.
 Only 3 depth levels. Example:
 
 ```text
-pages/
+content/
   topic/ # 1st level
     sub-topic/ # 2nd level
       sub-topic-file.md # 3d level
