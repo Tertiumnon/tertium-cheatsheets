@@ -3,9 +3,9 @@
   "version": "2.3.1",
   "description": "Cheatsheets for programmers.",
   "scripts": {
-    "release:patch": "node ./node_modules/@tertium/js/scripts/release.js patch",
-    "release:minor": "node ./node_modules/@tertium/js/scripts/release.js minor",
-    "release:major": "node ./node_modules/@tertium/js/scripts/release.js major"
+    "release:patch": "npx @tertium/gith release --patch",
+    "release:minor": "npx @tertium/gith release --minor",
+    "release:major": "npx @tertium/gith release --major"
   },
   "homepage": "https://github.com/Tertiumnon/tertium-cheatsheets#readme",
   "bugs": {
