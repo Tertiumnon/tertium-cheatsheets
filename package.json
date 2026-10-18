@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/Tertiumnon/tertium-cheatsheets.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Vitalii Balabanov",
   "type": "commonjs",
   "main": "index.js",
