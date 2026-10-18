@@ -1,4 +1,4 @@
-# Cheatsheets
+# @tertium/cheatsheets
 
 Cheatsheets for programmers.
 
