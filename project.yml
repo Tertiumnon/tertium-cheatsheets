@@ -1,4 +1,21 @@
 type: cheatsheets
+slug: tertium-cheatsheets
 language: Markdown
-publish_on:
+listed_on:
   - https://tertiumnon.github.io
+display_name:
+  en: "Tertium Cheatsheets"
+summary:
+  en: "Cheatsheets for programmers."
+languages:
+  - en
+default_language: en
+audience:
+  - developers
+entry_point: README.md
+team:
+  - name: Vitalii Balabanov
+    roles:
+      - owner
+      - maintainer
+    github: Tertiumnon
